@@ -12,6 +12,8 @@ const articles = (state = [], action) => {
             )
         case 'GET_ARTICLE_DATA_RECEIVED':
             return action.data
+        case 'GET_ARTICLE_DATA_ERROR':
+            return null;
         default:
             return state
     }
